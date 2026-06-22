@@ -50,20 +50,20 @@ function TimelineItem({ memory, index }) {
       </div>
 
       <div
-        className={`flex-1 w-full max-w-md ${isEven ? "md:text-left" : "md:text-right"} text-center`}
+        className={`flex-1 w-full max-w-md  ${isEven ? "md:text-left" : "md:text-right"} text-center`}
       >
         <motion.span
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
-          className="inline-block text-gold text-base md:text-lg tracking-wide mb-2 font-body"
+          className="inline-block text-gold text-base md:text-xl tracking-wide mb-2 font-body"
         >
           {memory.date}
         </motion.span>
-        <h3 className="text-xl md:text-3xl font-display text-gradient-rose mb-4">
+        <h3 className="text-xl md:text-4xl font-display text-gradient-rose mb-4">
           {memory.title}
         </h3>
-        <p className="text-pink-soft/70 text-lg md:text-xl leading-relaxed font-body">
+        <p className="text-pink-soft/70 text-lg md:text-2xl leading-relaxed font-body">
           {memory.description}
         </p>
       </div>
